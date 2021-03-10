@@ -26,5 +26,6 @@ export class RutDirective {
   @HostListener('input', ['$event.target'])
   public onChange(target: HTMLInputElement) {
     this.rutChange.emit(rutHelpers.rutClean(target.value));
+    target.value = rutHelpers.rutFormat(target.value) || '';
   }
 }
