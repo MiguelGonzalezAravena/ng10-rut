@@ -4,8 +4,6 @@ import { RutDirective } from './rut.directive';
 import { RutValidator } from './rut.validator';
 import { RutValueAccessor } from './rut-value-accessor';
 
-
-
 @NgModule({
   declarations: [
     RutPipe,

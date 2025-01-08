@@ -1,67 +1,68 @@
 {
   "name": "ng10-rut",
-  "version": "1.0.4",
-  "homepage": "https://github.com/HeyPay/ng10-rut#README.md",
+  "version": "3.0.0",
+  "homepage": "https://github.com/MiguelGonzalezAravena/ng10-rut#README.md",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HeyPay/ng10-rut/issues"
+    "url": "https://github.com/MiguelGonzalezAravena/ng10-rut/issues"
   },
   "author": {
-    "name": "Nesto",
-    "url": "https://nesto.cl"
+    "name": "Miguel González Aravena",
+    "url": "https://mgonzaleza.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HeyPay/ng10-rut.git"
+    "url": "https://github.com/MiguelGonzalezAravena/ng10-rut.git"
   },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
+    "build:prod": "ng build --configuration production",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "eslint ."
   },
-  "whitelistedNonPeerDependencies": [
-    "rut-helpers"
-  ],
   "private": false,
+  "peerDependencies": {
+    "rut-helpers": "^0.1.1"
+  },
   "dependencies": {
-    "@angular/animations": "~10.0.2",
-    "@angular/common": "~10.0.2",
-    "@angular/compiler": "~10.0.2",
-    "@angular/core": "~10.0.2",
-    "@angular/forms": "~10.0.2",
-    "@angular/platform-browser": "~10.0.2",
-    "@angular/platform-browser-dynamic": "~10.0.2",
-    "@angular/router": "~10.0.2",
-    "rollup": "^2.30.0",
-    "rxjs": "~6.6.3",
-    "tslib": "2.0.3",
-    "zone.js": "~0.10.3"
+    "@angular/animations": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.6.0",
+    "zone.js": "^0.14.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.1100.3",
-    "@angular-devkit/build-ng-packagr": "~0.1000.8",
-    "@angular/cli": "~10.0.1",
-    "@angular/compiler-cli": "~10.0.2",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
-    "codelyzer": "^6.0.0-next.1",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.0.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~3.3.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^10.0.0",
-    "protractor": "~7.0.0",
-    "puppeteer": "~5.5.0",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.9.5",
-    "rut-helpers": "0.1.1"
+    "@angular-devkit/build-angular": "^17.3.11",
+    "@angular-eslint/builder": "19.0.2",
+    "@angular-eslint/eslint-plugin": "19.0.2",
+    "@angular-eslint/eslint-plugin-template": "19.0.2",
+    "@angular-eslint/schematics": "19.0.2",
+    "@angular-eslint/template-parser": "19.0.2",
+    "@angular/cli": "^17.0.0",
+    "@angular/compiler-cli": "^17.0.0",
+    "@types/jasmine": "^4.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.7.0",
+    "@typescript-eslint/eslint-plugin": "7.11.0",
+    "@typescript-eslint/parser": "7.11.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsdoc": "^46.0.3",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "jasmine-core": "^5.1.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jest": "^29.7.0",
+    "jest-preset-angular": "^13.1.6",
+    "ng-packagr": "^17.3.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.2.2"
   }
 }
